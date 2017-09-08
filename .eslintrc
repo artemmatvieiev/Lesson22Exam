@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": [
+      "warn",
+      "never"
+    ],
+    "no-var": "warn",
+    "quotes": [
+      "warn",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "multiline-ternary": [
+      "warn",
+      "always"
+    ],
+    "no-unused-vars": "warn",
+    "no-duplicate-imports": "warn",
+    "no-tabs": "warn",
+    "no-const-assign": "warn",
+    "no-inline-comments": "warn",
+    "block-spacing": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error",
+          "info"
+        ]
+      }
+    ]
+  }
+}
