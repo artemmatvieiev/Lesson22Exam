@@ -24,6 +24,7 @@ export default class LayoutContainer extends React.PureComponent {
   }
 	handleScroll = () => {
     const { body: { scrollHeight, scrollTop, clientHeight } } = document
+		console.log(scrollHeight, scrollTop, clientHeight)
     if (scrollHeight - Math.ceil(scrollTop) === 735) {
 			const { notes, notesView } = this.state
 			const newNotesView = notes.slice(0, notesView.length + 20)

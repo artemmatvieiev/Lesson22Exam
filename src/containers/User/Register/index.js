@@ -114,6 +114,7 @@ export default class RegisterContainer extends React.PureComponent {
   }
 	handleClickRegister = () => {
 		document.getElementsByClassName("container")[0].classList.add("active")
+		
 	}
 	handleClickLogin = () => {
 		document.getElementsByClassName("container")[0].classList.remove("active")
@@ -139,14 +140,14 @@ export default class RegisterContainer extends React.PureComponent {
 				</h1>
 				<form>
 					{
-						inputs.map(({ inputId, validation, labelText, typeInput }, index) => (
+						inputs.map(({ inputId, validation, labelText, inputType }, index) => (
 							<InputComponent
 								key={index}
 								inputRef={input => this[inputId] = input}
 								handlerInputBlur={this.handlerInputBlur}
 								isValid={errors[inputId]}
 								labelText={labelText}
-								typeInput={typeInput}
+								inputType={inputType}
 								inputId={inputId}
 								validation={validation}
 							/>

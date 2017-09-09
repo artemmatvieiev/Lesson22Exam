@@ -21,7 +21,7 @@ const InputComponent = ({
 				required="required"
 				onBlur={ event => handlerInputBlur(event, inputId, validation)}
 			/>
-			<label for={inputId}>
+			<label htmlFor={inputId}>
 				{labelText}
 			</label>
 			<div className="bar"></div>
